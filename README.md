@@ -1,24 +1,22 @@
 # Gradient descent and support vector machines
 
-Gradient descent and a support vector machine, written from scratch in Python.
+A UCL MATH0011 group project in Python. The notebook approximates gradients with forward differences, plots descent paths, and fits a linear SVM to simulated two-dimensional points. NumPy handles the arrays; Matplotlib draws the contours and decision boundaries.
 
-## What it does
+The SVM loss combines squared weight regularisation with hinge loss. SciPy's `minimize` fits the bias and weights; this is not a custom optimisation solver. The repository does not record which parts each group member implemented.
 
-- Finds minima of functions of two variables with gradient descent, using a finite-difference gradient.
-- Plots the descent path on a contour plot.
-- Trains a support vector machine on simulated 2D data by minimising a hinge loss with `scipy.optimize.minimize`.
+![Recorded descent path](images/gradient_descent_path.png)
 
-![Gradient descent path](images/gradient_descent_path.png)
+## Open the notebook
 
-![SVM hyperplane and margins](images/svm.png)
+From the repository root:
 
-Skills shown: Python, NumPy, Matplotlib, SciPy, optimisation, machine learning fundamentals.
-
-## Run it
-
-```
-pip install -r requirements.txt
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 jupyter notebook notebook.ipynb
 ```
 
-This was a group project for MATH0011 at UCL.
+Run cells in order. Package versions and random seeds were not saved. The descent loop updates x before computing the y step, so it differs from a simultaneous gradient update. The final stored SVM output reports `success: False` with a precision-loss warning. Its plot uses the fitting data; there is no held-out accuracy result.
+
+The notebook has not been rerun in this review environment because SciPy is unavailable. The images are recorded outputs, not fresh verification. [The SVM plot](images/svm.png) is included separately.
