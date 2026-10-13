@@ -1,6 +1,6 @@
 # Gradient descent and support vector machines
 
-A UCL MATH0011 group project in Python. The notebook approximates gradients with forward differences, plots descent paths, and fits a linear SVM to simulated two-dimensional points. NumPy handles the arrays; Matplotlib draws the contours and decision boundaries.
+The notebook approximates gradients with forward differences, plots descent paths, and fits a linear SVM to simulated two-dimensional points. NumPy handles the arrays; Matplotlib draws the contours and decision boundaries.
 
 The SVM loss combines squared weight regularisation with hinge loss. SciPy's `minimize` fits the bias and weights; this is not a custom optimisation solver.
 
