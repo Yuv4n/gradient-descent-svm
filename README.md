@@ -19,4 +19,4 @@ jupyter notebook notebook.ipynb
 
 Run cells in order. Package versions and random seeds were not saved. The descent loop updates x before computing the y step, so it differs from a simultaneous gradient update. The final stored SVM output reports `success: False` with a precision-loss warning. Its plot uses the fitting data; there is no held-out accuracy result.
 
-The notebook has not been rerun in this review environment because SciPy is unavailable. The images are recorded outputs, not fresh verification. [The SVM plot](images/svm.png) is included separately.
+The images are recorded outputs from the original run of this group coursework notebook. [The SVM plot](images/svm.png) is included separately.
