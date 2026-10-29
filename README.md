@@ -19,3 +19,5 @@ jupyter notebook notebook.ipynb
 ## Limits
 
 Seeds and package versions were not saved. The descent updates x before y rather than simultaneously. The stored SVM output reports `success: False` with a precision-loss warning, and there is no held-out accuracy. The saved images ([SVM plot](images/svm.png)) are outputs of the original run.
+
+[MIT licence](LICENSE)
