@@ -2,7 +2,7 @@
 
 UCL group coursework notebook: finite-difference gradient descent with plotted descent paths, then a linear SVM fitted to simulated two-dimensional data.
 
-- **Gradient descent:** forward-difference gradients, with descent paths drawn on contour plots.
+- **Gradient descent:** forward-difference gradients, with descent paths drawn on contour plots; Matplotlib also draws the SVM decision boundaries. Run the cells in order.
 - **SVM:** hinge loss plus squared-weight regularisation, minimised with SciPy's `minimize` (not a custom solver).
 - **Stack:** NumPy and Matplotlib.
 
